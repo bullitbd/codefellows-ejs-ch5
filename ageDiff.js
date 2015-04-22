@@ -2,6 +2,11 @@
 
 var ancestry = JSON.parse(require('./ancestry.js'));
 
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+
 //get an array of mothers' names:
 var allMoms = [];
 ancestry.forEach(function(obj) {
@@ -49,6 +54,7 @@ console.log("Data:");
 console.log(pairs);
 console.log("\nThere are " + pairs.length + " children in the calculation;");
 console.log("The average age difference is " + avg + " years.");
+
 
 
 
