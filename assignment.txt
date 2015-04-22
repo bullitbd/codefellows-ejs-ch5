@@ -1,0 +1,1 @@
+Read Chapters 3,4,5 and 6 of Eloquent Javascript: http://eloquentjavascript.net/ (Links to an external site.) submit a github repo containing your solutions for the exercises found at the end of chapter 5.
