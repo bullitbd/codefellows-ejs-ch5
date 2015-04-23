@@ -7,6 +7,12 @@ function average(array) {
   return array.reduce(plus) / array.length;
 }
 
+//would like to talk about how this is built/accessed...
+var byName = {};
+ancestry.forEach(function(person) {
+  byName[person.name] = person;;
+});
+
 //get an array of mothers' names:
 var allMoms = [];
 ancestry.forEach(function(obj) {
@@ -54,6 +60,21 @@ console.log("Data:");
 console.log(pairs);
 console.log("\nThere are " + pairs.length + " children in the calculation;");
 console.log("The average age difference is " + avg + " years.");
+
+
+console.log("\nor... using the average function provided,");
+
+var arr = [];
+for (var i=0; i<pairs.length; i++) {
+  arr.push(pairs[i].born - pairs[i].birth);
+};
+var avgFn = Math.round(average(arr)*10)/10
+
+console.log("The average age difference is " + avgFn + " years.");
+
+
+
+ 
 
 
 

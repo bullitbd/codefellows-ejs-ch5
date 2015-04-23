@@ -1,1 +1,1 @@
-I have treated these exercises as snippets, assuming that enclosing functions would keep them from littering the global scope.
+I have treated these exercises as contained snippets, assuming that enclosing functions would keep them from littering the global scope.
